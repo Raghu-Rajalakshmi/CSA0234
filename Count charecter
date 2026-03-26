@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+    FILE *f;
+    char ch;
+    int count=0;
+
+    f=fopen("test.txt","r");
+
+    while((ch=fgetc(f))!=EOF)
+        count++;
+
+    printf("Characters = %d",count);
+
+    fclose(f);
+}
