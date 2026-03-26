@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void value(int x){
+    x = 100;
+}
+
+void reference(int *x){
+    *x = 100;
+}
+
+int main(){
+    int a=10;
+
+    value(a);
+    printf("Value: %d\n",a);
+
+    reference(&a);
+    printf("Reference: %d",a);
+
+    return 0;
+}
