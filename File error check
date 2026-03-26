@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    FILE *f;
+
+    f=fopen("test.txt","r");
+
+    if(f==NULL){
+        printf("File not found");
+        return 1;
+    }
+
+    printf("File opened");
+    fclose(f);
+}
