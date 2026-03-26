@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+struct emp{
+    int id;
+    float salary;
+};
+
+void display(struct emp e){
+    printf("ID: %d\nSalary: %.2f", e.id, e.salary);
+}
+
+int main(){
+    struct emp e;
+
+    printf("Enter id and salary: ");
+    scanf("%d %f",&e.id,&e.salary);
+
+    display(e);
+    return 0;
+}
