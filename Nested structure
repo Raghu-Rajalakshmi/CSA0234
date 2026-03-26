@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+struct date{
+    int day, month, year;
+};
+
+struct student{
+    int roll;
+    struct date d;
+};
+
+int main(){
+    struct student s;
+
+    scanf("%d %d %d %d",&s.roll,&s.d.day,&s.d.month,&s.d.year);
+
+    printf("%d %d/%d/%d",s.roll,s.d.day,s.d.month,s.d.year);
+}
