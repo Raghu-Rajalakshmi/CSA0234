@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+struct student{
+    int marks;
+};
+
+int main(){
+    struct student s1={90}, s2={85};
+
+    if(s1.marks > s2.marks)
+        printf("S1 higher");
+    else
+        printf("S2 higher");
+}
